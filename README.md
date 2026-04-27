@@ -94,17 +94,14 @@ Upload to GitHub Pages for free hosting.
     </div>
 </section>
 
+<!-- PREMIUM DIVIDER -->
+<div class="premium-divider">
+    <span>ABOUT ME</span>
+</div>
+
 <!-- ABOUT -->
 <section id="about" class="section">
     <h2>About Me</h2>
-
-    <div class="about-icons">
-        <span>🤖</span>
-        <span>💻</span>
-        <span>📊</span>
-        <span>🧠</span>
-        <span>🚀</span>
-    </div>
 
     <p>
 Hello! I'm <strong>Yashaswini</strong>, a 2nd-year B.Tech Information Technology student at Saveetha Engineering College. 
@@ -116,18 +113,6 @@ I am passionate, curious, and always ready to take on new challenges.
     </p>
 </section>
 
-<!-- SKILLS -->
-<section id="skills" class="section">
-    <h2>Skills</h2>
-    <div class="card-container">
-        <div class="card">C</div>
-        <div class="card">Python</div>
-        <div class="card">DBMS</div>
-        <div class="card">HTML</div>
-        <div class="card">AI & ML</div>
-        <div class="card">Deep Learning</div>
-    </div>
-</section>
 
 <!-- PROJECTS -->
 <section id="projects" class="section">
@@ -137,48 +122,54 @@ I am passionate, curious, and always ready to take on new challenges.
         <h3>TrustAI</h3>
         <p>
             TrustAI is an AI-based system developed to enhance safety and trust by analyzing data and identifying potential risks. 
-            It detects unusual patterns using intelligent algorithms and provides insights for better decision-making. 
-            The system is designed for real-world applications and focuses on improving reliability and security. 
-            It ensures a smooth and user-friendly experience through smart automation.
+            It detects unusual patterns using intelligent algorithms and provides insights for better decision-making.
         </p>
-
-        <div class="tags">
-            <span>Python</span>
-            <span>AI</span>
-            <span>Machine Learning</span>
-        </div>
     </div>
 
     <div class="project-card">
         <h3>Resume Analyzer</h3>
         <p>
             Resume Analyzer is a smart application that evaluates resumes and provides suggestions for improvement. 
-            It extracts key skills and compares them with job requirements to determine suitability. 
-            The system helps users identify missing skills and improve their resumes effectively. 
-            It includes a clean interface with visual insights for better understanding.
+            It extracts key skills and compares them with job requirements to determine suitability.
         </p>
-
-        <div class="tags">
-            <span>Python</span>
-            <span>Streamlit</span>
-            <span>NLP</span>
-        </div>
     </div>
-
 </section>
 
-<!-- CERTIFICATIONS -->
 <section id="certifications" class="section">
     <h2>Certifications</h2>
 
-    <ul class="cert-list">
-        <li><a href="https://coursera.org/share/fc1eb6f100e33f406250d964e49ef28a" target="_blank">PyTorch Ultimate 2024</a></li>
-        <li><a href="https://coursera.org/share/e54873e65c5dc7438bbb27d9202d9784" target="_blank">IBM Data Analyst</a></li>
-        <li><a href="https://coursera.org/share/fa3fce8eca52b82fc0f5c7ca61d75b0f" target="_blank">Interactivity with JavaScript</a></li>
-        <li><a href="https://coursera.org/share/7a61f533dc8fc7f9e747f34c9d97617f" target="_blank">Python for Data Science</a></li>
-    </ul>
+    <div class="cert-container">
+
+        <div class="cert-card">
+            <h3>PyTorch Ultimate 2024 – From Basics to Cutting-Edge</h3>
+            <a href="https://coursera.org/share/fc1eb6f100e33f406250d964e49ef28a" target="_blank">
+                View Certificate →
+            </a>
+        </div>
+
+        <div class="cert-card">
+            <h3>IBM Data Analyst</h3>
+            <a href="https://coursera.org/share/e54873e65c5dc7438bbb27d9202d9784" target="_blank">
+                View Certificate →
+            </a>
+        </div>
+
+        <div class="cert-card">
+            <h3>Interactivity with JavaScript</h3>
+            <a href="https://coursera.org/share/fa3fce8eca52b82fc0f5c7ca61d75b0f" target="_blank">
+                View Certificate →
+            </a>
+        </div>
+
+        <div class="cert-card">
+            <h3>Python for Data Science, AI & Development</h3>
+            <a href="https://coursera.org/share/7a61f533dc8fc7f9e747f34c9d97617f" target="_blank">
+                View Certificate →
+            </a>
+        </div>
+
+    </div>
 </section>
-<hr class="section-divider">
 <!-- CONTACT -->
 <section id="contact" class="section contact-section">
     <h2>Get In Touch</h2>
@@ -187,11 +178,26 @@ I am passionate, curious, and always ready to take on new challenges.
         Ready to discuss the next innovation in AI and Cloud.
     </p>
 
-    <p><strong>Direct:</strong> +91 9042983773</p>
+    <div class="contact-details">
 
-    <a href="https://www.linkedin.com/in/yashaswini-s-36b9bb327" target="_blank" class="linkedin-btn">
-        Connect on LinkedIn →
-    </a>
+        <div class="contact-item">
+            <span class="icon">📧</span>
+            <span>yashaswinisatheesh@gmail.com</span>
+        </div>
+
+        <div class="contact-item">
+            <span class="icon">📱</span>
+            <span>+91 9042983773 (WhatsApp)</span>
+        </div>
+
+        <div class="contact-item">
+            <span class="icon">🔗</span>
+            <a href="https://www.linkedin.com/in/yashaswini-s-36b9bb327" target="_blank">
+                LinkedIn Profile
+            </a>
+        </div>
+
+    </div>
 
     <p class="footer-text">© 2026 Yashaswini S. All rights reserved.</p>
 </section>
@@ -201,7 +207,6 @@ I am passionate, curious, and always ready to take on new challenges.
 ```
 ## CSS:
 ```
-/* RESET */
 * {
     margin: 0;
     padding: 0;
@@ -224,41 +229,26 @@ header {
     padding: 20px 60px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
     z-index: 1000;
-}
-
-header h1 {
-    font-size: 22px;
-    font-weight: 600;
 }
 
 nav a {
     margin-left: 20px;
     text-decoration: none;
     color: #cbd5f5;
-    transition: 0.3s;
 }
 
 nav a:hover {
     color: #38bdf8;
 }
 
-/* HERO SECTION */
+/* HERO */
 .hero-top {
-    background: #020617;
     padding: 180px 80px 100px;
-}
-
-.hero-text {
-    max-width: 800px;
 }
 
 .hero-text h1 {
     font-size: 55px;
-    font-weight: 700;
-    line-height: 1.1;
 }
 
 .hero-text span {
@@ -267,7 +257,6 @@ nav a:hover {
 
 .hero-subtitle {
     margin: 20px 0;
-    font-size: 18px;
     color: #94a3b8;
 }
 
@@ -275,86 +264,93 @@ nav a:hover {
     font-size: 12px;
     letter-spacing: 2px;
     color: #64748b;
-    margin-bottom: 25px;
 }
 
 .hero-btn {
     display: inline-block;
+    margin-top: 20px;
     padding: 12px 25px;
     background: #38bdf8;
     color: black;
-    text-decoration: none;
     border-radius: 8px;
-    font-weight: bold;
-    transition: 0.3s;
+    text-decoration: none;
+}
+.hero-top {
+    padding-bottom: 40px;   /* reduce huge gap */
 }
 
-.hero-btn:hover {
-    background: white;
+.premium-divider {
+    margin: 30px auto;      /* bring closer to hero */
+}
+
+/* DIVIDER */
+.premium-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 60px auto;
+    width: 80%;
+}
+
+.premium-divider::before,
+.premium-divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #38bdf8, transparent);
+}
+
+.premium-divider span {
+    margin: 0 15px;
+    color: #38bdf8;
+    font-size: 12px;
+    letter-spacing: 3px;
 }
 
 /* SECTIONS */
 .section {
-    padding: 100px 80px;
+    padding: 80px;
 }
+<header>...</header>
 
-/* HEADINGS */
-h2 {
-    color: #38bdf8;
-    margin-bottom: 20px;
-}
+<section class="hero-top">...</section>
 
-/* ABOUT SECTION FIX */
+<div class="premium-divider">
+    <span>ABOUT ME</span>
+</div>
+
+<section id="about" class="section">
+
+/* ABOUT SECTION */
 #about {
-    max-width: 900px;
-    margin: auto;
+    padding: 40px 80px;   /* reduce top gap → moves it visually up */
 }
 
-.about-icons {
-    display: flex;
-    gap: 12px;
-    margin-bottom: 20px;
+/* ABOUT HEADING */
+#about h2 {
+    font-size: 42px;      
+    margin-bottom: 25px;
+    color: #38bdf8;
 }
 
-.about-icons span {
-    background: #1e293b;
-    padding: 10px;
-    border-radius: 50%;
-    font-size: 20px;
-    transition: 0.3s;
-}
-
-.about-icons span:hover {
-    background: #38bdf8;
-    color: black;
-}
-
+/* ABOUT PARAGRAPH */
 #about p {
-    line-height: 1.8;
+    font-size: 22px;      
+    line-height: 2;
     color: #cbd5f5;
-    font-size: 16px;
+    width: 100%;
 }
-
-/* SKILLS (VERTICAL) */
+/* SKILLS */
 .card-container {
     display: flex;
     flex-direction: column;
-    gap: 12px;
-    margin-top: 20px;
+    gap: 10px;
 }
 
 .card {
     background: #1e293b;
-    padding: 12px 18px;
-    border-radius: 8px;
+    padding: 12px;
     width: fit-content;
-    transition: 0.3s;
-}
-
-.card:hover {
-    background: #38bdf8;
-    color: black;
-    transform: translateX(5px);
 }
 
 /* PROJECTS */
@@ -362,95 +358,130 @@ h2 {
     background: #1e293b;
     padding: 20px;
     margin-top: 15px;
-    border-radius: 12px;
-    transition: 0.3s;
+    border-radius: 10px;
 }
 
-.project-card:hover {
-    transform: translateY(-5px);
-}
-
-/* PROJECT TAGS */
-.tags {
-    margin-top: 10px;
-}
-
-.tags span {
-    background: #334155;
-    padding: 6px 12px;
-    border-radius: 20px;
-    margin-right: 5px;
-    font-size: 12px;
-}
-
-/* CERTIFICATIONS */
-.cert-list {
-    list-style: none;
+.cert-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     margin-top: 20px;
 }
 
-.cert-list li {
+.cert-card {
     background: #1e293b;
-    padding: 12px 18px;
-    margin-bottom: 10px;
-    border-radius: 8px;
+    padding: 20px;
+    border-radius: 10px;
     transition: 0.3s;
 }
 
-.cert-list li:hover {
-    background: #38bdf8;
+.cert-card h3 {
+    margin-bottom: 10px;
 }
 
-.cert-list a {
+.cert-card a {
+    color: #38bdf8;
     text-decoration: none;
-    color: #f1f5f9;
     font-weight: 500;
 }
 
-.cert-list li:hover a {
-    color: black;
+.cert-card:hover {
+    transform: translateY(-5px);
 }
-
 /* CONTACT */
 .contact-section {
     text-align: center;
 }
 
-.contact-text {
-    margin: 15px 0;
-    color: #94a3b8;
+.contact-details {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
 }
 
-.linkedin-btn {
-    display: inline-block;
-    margin-top: 10px;
+.contact-item {
+    display: flex;
+    gap: 10px;
+    background: #1e293b;
+    padding: 12px 18px;
+    border-radius: 8px;
+}
+
+.contact-item a {
     color: #38bdf8;
     text-decoration: none;
-    font-weight: 600;
-}
-
-.linkedin-btn:hover {
-    text-decoration: underline;
 }
 
 .footer-text {
-    margin-top: 40px;
+    margin-top: 20px;
     font-size: 12px;
     color: #64748b;
 }
-.section-divider {
-    border: none;
-    height: 1px;
-    width: 80%;
-    margin: 0 auto;
-    background: linear-gradient(to right, transparent, #38bdf8, transparent);
+/* SKILLS SECTION LAYOUT */
+.skills-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    margin-top: 40px;
+    padding-left: 80px;
+    padding-right: 80px;
 }
+
+/* LEFT SIDE (LIST) */
+.skills-list {
+    width: 55%;
+}
+
+/* BIGGER ORDERED LIST */
+.skills-list ol {
+    font-size: 22px;          
+    line-height: 2.2;
+    color: #f1f5f9;
+    padding-left: 25px;
+}
+
+/* EACH ITEM STYLE */
+.skills-list li {
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+/* HOVER EFFECT */
+.skills-list li:hover {
+    color: #38bdf8;
+    transform: translateX(8px);
+}
+
+/* RIGHT SIDE (VISUAL BOX) */
+.skills-visual {
+    width: 45%;
+    background: #1e293b;
+    padding: 35px;
+    border-radius: 12px;
+    font-size: 18px;
+    line-height: 2;
+    color: #cbd5f5;
+    transition: 0.3s;
+}
+
+.skills-visual:hover {
+    transform: scale(1.02);
+}
+
+
+
+
+
+
 ```
 ## OUTPUT
 
-<img width="1919" height="1143" alt="image" src="https://github.com/user-attachments/assets/a377b15e-e111-4137-bb9e-d68adf89f459" />
-<img width="1918" height="1151" alt="image" src="https://github.com/user-attachments/assets/b9c14292-d15b-45d4-9fb8-4c9d64e8ec44" />
-<img width="1918" height="1140" alt="image" src="https://github.com/user-attachments/assets/0f2076d8-97d0-46cc-8486-4fa0637dfdb1" />
+<img width="1911" height="1147" alt="image" src="https://github.com/user-attachments/assets/96f48790-594f-4729-a7d7-9ec01eaef64f" />
+<img width="1911" height="1082" alt="image" src="https://github.com/user-attachments/assets/56b36484-fb7a-453d-9266-64c5d7b7521c" />
+<img width="1915" height="1198" alt="image" src="https://github.com/user-attachments/assets/08f933aa-1437-4464-8227-408776f41323" />
+
 
 
 ## RESULT
